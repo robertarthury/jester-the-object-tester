@@ -35,8 +35,8 @@ To dynamically and quickly create a team HTML page, Inquirer NPM was utilized to
 
 
 ## Deployed
-
-
+-video of the site's functionality
+https://drive.google.com/file/d/1de709fKokpZhnsebSTgmz3e05N8Sph-h/view
 
 
 
