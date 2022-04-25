@@ -1,3 +1,15 @@
+const inquirer = require('inquirer');
+const fs = require('fs');
+//variables to connect modules to application
+const util = require('util');
+const generateHTML = require('.util')
+const questions = require('lib/questions.js').questions;
+
+
+
+
+
+
 class Employee {
     constructor(name, id, email){
         this.name = name;
@@ -5,16 +17,16 @@ class Employee {
         this.email = email;
     }
     getName(){
-        return this;
+        return this.name;
     }
     getId(){
-        return this;
+        return this.id;
     }
     getEmail(){
-        return this;
+        return this.email;
     }
     getRole(){
-        return this;
+        return 'Employee';
     }
 }
 
@@ -22,6 +34,9 @@ class Manager extends Employee{
     constructor(name, id, email, officeNumber){
         super(name, id, email);
         this.officeNumber = officeNumber;
+    }
+    getRole(){
+        return 'Manager'
     }
 }
 
@@ -31,7 +46,10 @@ class Engeneer extends Employee{
         this.github = github;
     }
     getGithub(){
-
+        //link to GitHub profile page
+    }
+    getRole(){
+        return 'Engeneer';
     }
 }
 
@@ -42,5 +60,8 @@ class Intern extends Employee{
     }
     getSchool(){
 
+    }
+    getRole(){
+        return 'Intern';
     }
 }
